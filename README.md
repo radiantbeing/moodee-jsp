@@ -22,7 +22,7 @@ Tomcat은 HTTP/1.1 Connector Port로 `8080`번을, Server Shutdown Port로 `8005
 
 - 역할과 사용자 구성
 
-Tomcat 서버에 역할과 사용자를 구성하기 위해 `moodee/Tomcat_hosting_reference/tomcat-users.xml`을 이용합니다.
+Tomcat 서버에 역할과 사용자를 구성하기 위해 `/Tomcat_hosting_reference/tomcat-users.xml`을 이용합니다.
 
 ### MySQL과의 연동
 

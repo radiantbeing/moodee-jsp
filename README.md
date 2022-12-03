@@ -31,7 +31,7 @@ MySQL을 설치하고 다음 파라미터를 참고하여 데이터베이스를 
 | user              | root                                 |
 | password          | 1234                                 |
 
-연동이 완료되면 `/src/main/webapp/SQLs/createTables.sql`을 실행하여 테이블을 생성하세요. 그 뒤에 미리 정의된 플레이리스트를 추가하기 위해 `/src/main/webapp/SQLs/insertItems.sql`을 실행하세요.
+데이터베이스 생성이 완료되면 `/src/main/webapp/SQLs/createTables.sql`을 실행하여 테이블을 생성하세요. 그 뒤에 미리 정의된 플레이리스트를 추가하기 위해 `/src/main/webapp/SQLs/insertItems.sql`을 실행하세요.
 
 ## 기능
 

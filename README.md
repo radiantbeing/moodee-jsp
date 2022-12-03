@@ -22,7 +22,7 @@ Tomcat을 이용하여 8080 포트에서 MOODEE를 호스팅합니다.
 
 ### MySQL과의 연동
 
-MySQL과 연동하기 위해 필요한 파라미터는 다음과 같습니다.
+MySQL을 설치하고 다음 파라미터를 참고하여 데이터베이스를 생성하세요.
 
 | 속성              | 값                                   |
 | ----------------- | ------------------------------------ |
@@ -31,7 +31,7 @@ MySQL과 연동하기 위해 필요한 파라미터는 다음과 같습니다.
 | user              | root                                 |
 | password          | 1234                                 |
 
-연동이 완료되면 `/src/main/webapp/SQLs`에 위치한 테이블 생성을 위해 `createTables.sql`을 실행하세요. 그리고 미리 정의된 플레이리스트를 추가하기 위해 `insertItems.sql`을 실행하세요.
+연동이 완료되면 `/src/main/webapp/SQLs/createTables.sql`을 실행하여 테이블을 생성하세요. 그 뒤에 미리 정의된 플레이리스트를 추가하기 위해 `/src/main/webapp/SQLs/insertItems.sql`을 실행하세요.
 
 ## 기능
 

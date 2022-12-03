@@ -14,11 +14,15 @@ MOODEE의 개발 환경은 다음과 같습니다.
 
 ## 호스팅
 
-Tomcat을 이용하여 8080 포트에서 MOODEE를 호스팅합니다.
+### Tomcat
 
-### tomcat-users.xml
+- Port
 
-`/Tomcat_hosting_reference`에 위치한 `tomcat-users.xml`을 Tomcat 설정에 사용합니다.
+Tomcat은 HTTP/1.1 Connector Port로 `8080`번을, Server Shutdown Port로 `8005`번을 이용합니다.
+
+- 역할과 사용자 구성
+
+Tomcat 서버에 역할과 사용자를 구성하기 위해 `moodee/Tomcat_hosting_reference/tomcat-users.xml`을 이용합니다.
 
 ### MySQL과의 연동
 

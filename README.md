@@ -2,7 +2,7 @@
 
 ![home](./docs/home.png)
 
-MOODEE는 [YouTube Player API]("https://developers.google.com/youtube/iframe_api_reference?hl=ko")를 이용한 플레이리스트 재생기입니다.
+MOODEE는 [YouTube Player API](https://developers.google.com/youtube/iframe_api_reference?hl=ko)를 이용한 플레이리스트 재생기입니다.
 
 ## 개발 환경
 
@@ -83,5 +83,5 @@ MOODEE에 첫 화면으로 추천 플레이리스트가 나타납니다. `이전
 
 ## Reference
 
-- [toastify-js]("https://github.com/apvarun/toastify-js")
-- [particles.js]("https://github.com/marcbruederlin/particles.js")
+- [toastify-js](https://github.com/apvarun/toastify-js)
+- [particles.js](https://github.com/marcbruederlin/particles.js)

@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* ################################## */
+/* ##########     Home     ########## */
+/* ################################## */
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home > .home__intro {
+  width: 100%;
+}
+
+.intro {
+  width: 100%;
+  background-color: orange;
+  overflow: hidden;
+}
+
+.intro > .intro__container {
+  display: flex;
+  width: 300vw;
+  transition: transform 0.5s;
+}
+
+.intro > .intro__container > .intro__item {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 15vw;
+}
+
+.intro > .intro__container > .intro__item > .intro__info {
+  width: 500px;
+}
+
+.intro > .intro__container > .intro__item > .intro__info > .intro__heading {
+  font-size: 1.75rem;
+  font-family: "Noto Serif KR", serif;
+  word-break: keep-all;
+  line-height: 2.6rem;
+}
+
+.intro > .intro__container > .intro__item > .intro__info > .intro__description {
+  line-height: 1.8rem;
+  font-size: 1.1rem;
+  word-break: keep-all;
+}
+
+.intro > .intro__container > .intro__item > .intro__info > .intro__controls {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.intro
+  > .intro__container
+  > .intro__item
+  > .intro__info
+  > .intro__controls
+  > .intro__play {
+  background-color: black;
+  border: 1px solid black;
+  padding: 10px 16px;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.intro
+  > .intro__container
+  > .intro__item
+  > .intro__info
+  > .intro__controls
+  > .intro__play:hover {
+  background-color: orange;
+  color: black;
+}
+
+.intro
+  > .intro__container
+  > .intro__item
+  > .intro__info
+  > .intro__controls
+  > .intro__changers
+  > .intro__changer {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: black;
+}
+
+.intro > .intro__container > .intro__item > .intro__song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro > .intro__container > .intro__item > .intro__song > .intro__song-img {
+  width: 240px;
+  height: 240px;
+  /*   background-image: url("../images/sample1.jpg"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  /* 	object-fit: contain; */
+  border: 1px solid black;
+}
+
+.intro > .intro__container > .intro__item > .intro__song > .intro__song-name {
+  margin-top: 20px;
+}
+
+@keyframes progressBar {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+.intro > .intro__progress-bar {
+  width: 100vw;
+  height: 4px;
+  background-color: black;
+  transform-origin: 0% 50%;
+  animation-name: progressBar;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+}
+
+.home > .home__welcome {
+  width: 100%;
+  padding: 72px 15vw;
+  position: relative;
+}
+
+.welcome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  /* 	border: 1px solid #ddd; */
+}
+
+@media screen and (max-width: 768px) {
+  .home > .home__welcome {
+    padding: 40px 15vw;
+  }
+  .welcome {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.welcome > .welcome__clock {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.welcome > .welcome__message > .welcome__heading {
+  font-family: "Poiret One", cursive;
+  /* 	font-weight: 400; */
+  font-size: 4rem;
+  margin-top: 0.3em;
+  margin-bottom: 0.4em;
+}
+
+.welcome > .welcome__message > .welcome__body {
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro > .intro__container > .intro__item {
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .intro > .intro__container > .intro__item > .intro__info {
+    order: 2;
+  }
+  .intro > .intro__container > .intro__item > .intro__info {
+    width: 320px;
+  }
+}

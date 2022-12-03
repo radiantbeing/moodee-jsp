@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* #################################### */
+/* ##########     Manage     ########## */
+/* #################################### */
+label {
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    padding-left: 16px;
+  }
+}
+
+.main__manage {
+  width: 60%;
+  padding: 32px 4vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main__manage {
+    width: 100%;
+  }
+}
+
+.main__manage > h2 {
+  margin-top: 0;
+}
+
+.manage {
+  border: 1px solid #ddd;
+  padding: 24px;
+}
+
+.manage > .manage__label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.manage > .manage__select {
+  margin-bottom: 10px;
+}
+
+.help {
+  border: 1px solid #ddd;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.help > .help__item {
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .help > .help__item {
+    font-size: 0.75rem;
+  }
+}
+
+.help > .help__item > code {
+  font-family: "Pretendard Variable", sans-serif;
+  background-color: #ddd;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-radius: 12px;
+  line-height: 1.2rem;
+}
+
+.help > .help__item--example {
+  margin-top: 10px;
+}
+
+input[type="button"] {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 0.9rem;
+}
+
+input[type="button"]:hover {
+  color: black;
+  background-color: white;
+}

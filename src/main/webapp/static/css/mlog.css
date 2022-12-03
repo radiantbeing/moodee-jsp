@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* ################################### */
+/* ##########     M-LOG     ########## */
+/* ################################### */
+
+.mlog__diary {
+  width: 50%;
+  padding: 32px 4vw;
+  margin: 0 auto;
+}
+
+.mlog__diary > h2 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mlog__diary {
+    width: 100%;
+  }
+}
+
+.diary {
+  border: 1px solid #ddd;
+  padding: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .diary {
+    padding: 8px;
+  }
+}
+
+.post {
+  padding: 12px;
+}
+
+.post > .post__date {
+  color: grey;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.post > .post__content {
+  display: flex;
+  align-items: center;
+}
+
+.post > .post__content > a >.post__img {
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  background-color: black;
+  object-fit: contain;
+}
+
+.post > .post__content > .post__text-box {
+  padding: 16px 8px;
+}
+
+.post > .post__content > .post__text-box > .post__info {
+  color: grey;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.post > .post__content > .post__text-box > .post__info.post__info--artist {
+  margin-bottom: 8px;
+}
+
+.post > .post__content > .post__text-box > .post__body {
+  word-break: break-all;
+}
